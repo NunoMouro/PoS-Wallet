@@ -1,6 +1,6 @@
 TEMPLATE = app
-TARGET = InterstellarHoldings-qt
-VERSION = 1.0.3.0
+TARGET = PoSWallet
+VERSION = 1.0.0.0
 INCLUDEPATH += src src/json src/qt
 QT += network
 DEFINES += ENABLE_WALLET
@@ -439,8 +439,8 @@ macx:HEADERS += src/qt/macnotificationhandler.h src/qt/macdockiconhandler.h
 macx:OBJECTIVE_SOURCES += src/qt/macnotificationhandler.mm src/qt/macdockiconhandler.mm
 macx:LIBS += -framework Foundation -framework ApplicationServices -framework AppKit
 macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0
-macx:ICON = src/qt/res/icons/InterstellarHoldings.icns
-macx:TARGET = "InterstellarHoldings-Qt"
+macx:ICON = src/qt/res/icons/PosWallet.icns
+macx:TARGET = "PoSWallet"
 macx:QMAKE_CFLAGS_THREAD += -pthread
 macx:QMAKE_LFLAGS_THREAD += -pthread
 macx:QMAKE_CXXFLAGS_THREAD += -pthread
